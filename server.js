@@ -8,7 +8,6 @@ const users = JSON.parse(fs.readFileSync('./data.json'));
 
 // get all users
 app.get('/', (req, res) => {
-    // res.send("users")
     res.status(200).json(users)
 })
 
